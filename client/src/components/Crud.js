@@ -66,7 +66,7 @@ const Crud = () => {
     setEditGender(items.gender);
     setEditSalary(items.salary);
   };
-
+  ////////////-------This is Update API---------------//////////////////
   const handleEdit = async () => {
     const result = await fetch(`http://localhost:8080/update/${id}`, {
       method: "PUT",
